@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function doSomeStuff() {
+            // let x = "99X";
+            // x = parseInt(x) +1
+            // console.log(`X=${x}`)
+            // console.log(typeof x)
+            let x;
+            x = null;
+            checkType(x);
+        }
+
+        function checkType (n) {
+            let msg = `Input is of type: ${typeof n}`;
+            let resObj = document.getElementById("results");
+            console.log(typeof resObj)
+            if (resObj === null)
+                alert("null")
+            resObj.innerHTML = msg;
+        }
+    </script>
+</head>
+<body>
+    <button type = "button" onClick = "doSomeStuff()"> Click me </button>
+    <div id = "results"> </div>
+</body>
+</html>

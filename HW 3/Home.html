@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel = "stylesheet" href = "css/styles.css" />
+</head>
+<body>
+<div class="grid-container1">
+    <div class="item1">
+        <span id = "title"> Mario's Pizza </span>
+        <img id = "pizzaMario" src = "imgs/mario.png" alt = "A picture of mario with pizza"/>
+    </div>
+    <div class="item2">
+        <nav class = "home">
+            <a id = "homeLink" href = "Home.html"> Home </a>
+            <a id = "aboutLink" href = "About.html"> About </a>
+        </nav>
+    </div>
+    <div class="item3">
+        <strong>Tell us about you</strong>
+        <form>
+            <div id = "name" class="form-group1">
+                <label for="theName">Name:</label>
+                <input type="text" name="theName" id="theName" />
+            </div>
+            <div class="form-group1">
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age" />
+            </div>
+            <div class="form-group1">
+                <label for="favoriteToppings"> Favorite Topping:</label>
+                <select name = "favoriteToppings" id = "favoriteToppings" >
+                    <option value ="Extra Cheese"> Extra Cheese </option>
+                </select>
+            </div>
+            <div id = "favoriteGames"> Favorite Games </div>
+            <div class="form-group2">
+                <label for="cart"> Mario Kart: </label>
+                <input type="checkbox" name="cart" id = "cart" value="1">
+            </div>
+            <div class="form-group2">
+                <label for="party"> Mario Party: </label>
+                <input type="checkbox" name="party" id = "party" value="2">
+            </div>
+            <div class="form-group2">
+                <label for="smashBros"> Super Smash Bros: </label>
+                <input type="checkbox" name="smashBros" id = "smashBros" value="3">
+            </div>
+            <div class = "form-group1">
+                <button id = "button" type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="item4">
+        <img id = "goMario" src = "imgs/marioGo.jpg" alt = "A picture of mario jumping happily"/>
+    </div>
+
+
+</div>
+</body>
+</html>

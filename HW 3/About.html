@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> About </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles2.css" />
+</head>
+<body>
+<div class="grid-container2">
+    <div class="item1">
+        <img id = "pizzaMario" src = "imgs/mario.png" alt = "A picture of mario with pizza"/>
+        <span id = "title"> Mario's Pizza </span>
+        <nav class = "About">
+            <a id = "homeLink" href = "Home.html"> Home </a>
+            <a id = "aboutLink" href = "About.html"> About Us </a>
+        </nav>
+    </div>
+    <div class = "item3">
+        <strong>Tell us about you</strong>
+        <form>
+            <div id = "name" class="form-group1">
+                <div> <label for="theName">Name:</label> </div>
+                <div> <input type="text" name="theName" id="theName" /> </div>
+            </div>
+            <div class="form-group1">
+                <div> <label for="age">Age:</label> </div>
+                <div> <input type="number" name="age" id="age" /> </div>
+            </div>
+            <div id = "favoritesBox">
+                <div id = "favoriteToppingsBox" class = "form-group1">
+                    <div> <label id = "favoriteToppingsTitle" for ="favoriteToppings"> Favorite Topping:</label> </div>
+                    <div>
+                        <select name = "favoriteToppings" id = "favoriteToppings" >
+                            <option value ="Extra Cheese"> Extra Cheese </option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <div id = "favoriteGamesTitle"> Favorite Games </div>
+                    <div class="form-group2">
+                        <label for="cart"> Mario Kart: </label>
+                        <input type="checkbox" name="cart" id = "cart" value="1">
+                        <label for="party"> Mario Party: </label>
+                        <input type="checkbox" name="party" id = "party" value="2">
+                        <label for="smashBros"> Super Smash Bros: </label>
+                        <input type="checkbox" name="smashBros" id = "smashBros" value="3">
+                        <div> <button id = "button" type="submit" class="btn btn-primary">Submit</button> </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class = "item4">
+        <img id = "goMario" src = "imgs/marioGo.jpg" alt = "A picture of mario jumping happily"/>
+    </div>
+    <div class = "item5">
+        <span> Portfolio: <a href="https://jaedog117.github.io//"> https://jaedog117.github.io/ </a></span>
+    </div>
+</div>
+</body>
+</html>

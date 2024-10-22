@@ -1,0 +1,153 @@
+html, body {
+    height: 100%;
+    margin: 0; /* Remove default margin */
+}
+
+.item1 { grid-area: title; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container2 {
+    display: grid;
+    grid-template-areas:
+            "title title title title"
+            "main main main right"
+            "footer footer footer footer";
+    grid-template-rows: 2fr 6fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: aqua;
+    height: 100%;
+
+}
+
+.grid-container2 >  .item1 {
+    display: flex;
+    font-weight: bold;
+    background-color: #00ABE4;
+}
+
+.item1 > .About {
+    position: relative;
+    top: 3.25rem;
+    margin-left: 1rem;
+}
+
+.About > a {
+    padding: 0.5rem;
+    color: dimgrey;
+    font-weight: lighter;
+}
+
+nav.About {
+    a#aboutLink {
+        color: black;
+        font-weight: bold;
+    }
+}
+
+#pizzaMario {
+    float: left;
+    height: 8rem;
+    margin: 1rem;
+}
+
+#title {
+    position: relative;
+    top: 1.5rem;
+    font-size: 2.75rem;
+}
+
+nav {
+    text-align: left;
+}
+
+nav > a {
+    padding: 2rem;
+    text-decoration: none;
+}
+
+nav.home {
+    a#homeLink {
+        color: blue;
+        font-weight: bold;
+    }
+}
+
+.item3 {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-end;
+    margin-left: 1rem;
+}
+
+.item3 > strong {
+    font-size: 3rem;
+    color: black;
+}
+
+#favoriteToppingsTitle, #favoriteGamesTitle {
+    font-size: 2.75rem;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 1.25rem;
+    border: 1.25px solid black;
+    width: 100%;
+
+}
+
+.form-group1 label, .form-group1 select, .form-group2 label {
+    font-size: 1.25rem;
+    width: auto;
+}
+
+.form-group1 [type="text"], .form-group1 input[type="number"], .form-group1 select {
+    width: auto;
+}
+
+.form-group1 > #favoriteToppings {
+    text-align: left;
+    width: 55.75%;
+}
+
+#theName, #age {
+    width: 100%;
+}
+
+#goMario {
+    margin-top: 14rem;
+    margin-left: 1.75rem;
+    width: 30%;
+}
+
+#favoritesBox {
+    display: flex;
+}
+
+#favoriteToppingsBox {
+    margin-right: 15rem;
+}
+
+.item5 {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    background-color: #00ABE4;
+    padding-left: 5rem;
+}
+
+.item5 a {
+    color: black;
+}
+
+#button {
+    height: 3rem;
+    width: 6rem;
+}
+
+
